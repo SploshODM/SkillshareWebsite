@@ -5,17 +5,16 @@ html{
 /*--------------------------------------------------------------------
 							MOBILE FIRST
 --------------------------------------------------------------------*/
-html{
-	background-color: lightgrey;
-}
+	html{
+		background-color: lightgrey;
+	}
 
-body{
-	margin: 0 auto;
-	width: 100%;
-	background: white;
-}
+	body{
+		margin: 0 auto;
+		width: 100%;
+		background: white;
+	}
 
-/* HEADER */
 	img{
 		width: 100%;
 		display: block;
@@ -37,7 +36,6 @@ body{
 		width: 100%;
 		text-align: center;
 	}
-/* END HEADER */
 
 /* TOP MENU */
 	ul{
@@ -156,10 +154,168 @@ body{
 		text-decoration: underline;
 		color: #ec008c;
 	}
+/* END THIRD ROW SECTION */
 
+/* FOOTER SECTION */
 	footer p{
 		text-align: center;
 		padding-bottom: 2%;
 		background: white;
 	}
+/* END FOOTER SECTION */
+
+/*--------------------------------------------------------------------
+							DEVICES > 600px
+--------------------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+
+/* TOP MENU */
+	header nav ul{
+		position: absolute;
+		top: 8%;
+		text-align: center;
+		background-color: white;
+	}
+
+	header li, li a{
+		display: inline-block;
+		background-color: transparent;
+		border-bottom: none;
+		color: #4a525f;
+		padding: 5px;
+	}
+
+	header li{
+		border-right: 1px solid #4a525f;
+	}
+
+	header li:last-child{
+		border-right: none;
+	}
+
+	header li:hover, header li a:hover{
+		background-color: #d8cccc;
+	}
+/* TOP MENU END */
+
+/* HEADER SECTION */
+	header p{
+		bottom: 40%
+		font-size: 2em;
+	}
+
+	#apply-btn{
+		bottom: 30%;
+	}
+/* END HEADER SECTION */
+
+/* FIRST ROW SECTION */
+	.row1-1{
+		width: 50%;
+		margin-top: 2%;
+	}
+
+	.row1-2{
+		/*display: flex;
+		justify-content: center;
+		align-items: center;
+		*/
+		font-size: 2em;
+		width: 50%;
+		background: inherit;
+	}
+
+	.row1-2 p{
+		/*max-width: 60%;*/
+		font-size: 2em;
+	}
+/* END FIRST ROW SECTION */
+
+/* SECOND ROW SECTION */
+	.row2 p{
+		font-size: 2em;
+	}
+
+	.sarah, .tom {
+		width: 50%;
+		float: left;
+		padding-bottom: 2%;
+	}
+/* END SECOND ROW SECTION */
+
+/* THIRD ROW SECTION */
+	.row3{
+		display: flex;
+	}
+
+	.row3-1 {
+		/*
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		*/
+
+		font-size: 2em;
+		width: 50%;
+		float: left;
+		padding-top: 11%;
+		background-color: #ffffff;
+	}
+
+	/*.row3-1 p {
+		max-width: 60%;
+	}*/
+
+	.row3-2{
+		/*flex: 1;*/
+		width: 50%;
+		float: left;
+	}
 /* END THIRD ROW SECTION */
+
+/* FOOTER SECTION */
+	/*
+	footer ul{
+		text-align: center;
+		background: #8393ca;
+		margin: 0;
+	}
+
+	footer li; li a{
+		display: inline-block;
+		background: transparent;
+		border-bottom: none;
+		padding: 5px;
+	}
+
+	footer li{
+		border-right: 1px solid #4a525f;
+	}
+
+	footer li:last-child{
+		border-right: none;
+	}
+
+	footer li:hover, footer li a:hover{
+		background: #3e486a;
+	}
+
+	footer p{
+		padding-top: 2%
+		background: #e0e0eb;
+		font-size: 1.2em;
+	}
+	*/
+
+	.copy {
+		padding-top: 2%;
+		background-color: #E0E0EB;
+	}
+
+	footer p{
+		font-size: 1.2em;
+	}
+/* END FOOTER SECTION */
+}
